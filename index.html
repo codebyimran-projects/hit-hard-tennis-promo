@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@codebyimran | Muhammad Imran</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="icon"><i class="fas fa-home"></i></div>
+        <div class="icon"><i class="fas fa-user"></i></div>
+        <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+        <div class="icon"><i class="fas fa-heart"></i></div>
+        <div class="icon"><i class="fas fa-cog"></i></div>
+        <div class="profile-pic"><i class="fas fa-user"></i></div>
+      </div>
+      <div class="main-content">
+        <div class="header">
+          <div class="social-icon"><i class="fas fa-camera"></i></div>
+          <div class="search-bar" onclick="openSearchPopup()">
+            <span>SEARCH</span>
+            <div class="menu-icon"><i class="fas fa-ellipsis-v"></i></div>
+          </div>
+        </div>
+        <div class="hero">
+          <img
+            src="assets/images/img3.jpg"
+            alt="Tennis Player"
+            class="player-image"
+          />
+          <div class="hero-text">HIT HARD<br />WIN BIG</div>
+        </div>
+        <div class="bottom-section">
+          <div class="discount-section">
+            <div>
+              <div class="discount-text">40% OFF<br />ON RACKET</div>
+              <br />
+              <button class="shop-now">SHOP NOW</button>
+            </div>
+            <img
+              src="assets/images/img2.png"
+              alt="Tennis Player Action"
+              class="action-image"
+            />
+          </div>
+          <div class="new-arrivals">
+            <span>NEW ARRIVALS</span>
+            <div class="arrivals-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button class="get-now">GET NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Popup -->
+    <div id="searchPopup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closeSearchPopup()">×</span>
+        <h2><i class="fas fa-search"></i> Search Products</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Type to search..."
+          onkeyup="searchProducts()"
+        />
+        <ul id="searchResults"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
